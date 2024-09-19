@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼</title>
+    <style>
+        form {
+            width: 500px;
+        }
+        textarea {
+            width: 95%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입 창</h1>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+
+            <label for="userid">아이디:</label>
+            <input type="text" id="userid" name="userid"><br><br>
+
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="confirm_password">비밀번호 확인:</label>
+            <input type="password" id="confirm_password" name="confirm_password"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+
+            <input type="radio" id="receive_email" name="newsletter" value="yes" checked>
+            <label for="receive_email">메일 수신</label>
+
+            <input type="radio" id="not_receive_email" name="newsletter" value="no">
+            <label for="not_receive_email">메일 수신 안 함</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>알게 된 경로</legend>
+            <input type="checkbox" id="search" name="discovery" value="search">
+            <label for="search">인터넷 검색</label>
+
+            <input type="checkbox" id="friend" name="discovery" value="friend">
+            <label for="friend">친구 추천</label>
+
+            <input type="checkbox" id="sns" name="discovery" value="sns">
+            <label for="sns">SNS 광고</label>
+
+            <input type="checkbox" id="other" name="discovery" value="other">
+            <label for="other">기타</label><br>
+        </fieldset><br>
+
+        <button type="submit">가입하기</button>
+        <button type="reset">취소</button>
+    </form>
+    
+</body>
+</html>
